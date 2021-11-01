@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/main2_back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TITLE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp" />
+
+            <ImageView
+
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:src="@mipmap/search" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:src="@mipmap/more" />
+
+        </LinearLayout>
+
+        <com.coorchice.library.SuperTextView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:text="5"
+            android:textSize="8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:stv_corner="40dp"
+            app:stv_solid="#DD2248"/>
+
+        <com.statement.EasyNavigationBar
+            android:id="@+id/easy_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp" />
+    </FrameLayout>
+</layout>
