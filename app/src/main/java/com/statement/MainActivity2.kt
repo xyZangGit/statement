@@ -32,6 +32,7 @@ class MainActivity2 : AppCompatActivity() {
             fragmentManager(supportFragmentManager)
             build()
 
+
         }
 
 
